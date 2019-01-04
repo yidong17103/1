@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    tools:context=".sjActivity">
+
+    <TextView
+        android:id="@+id/tv-zbsj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="值班时间"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv-sj1"
+        android:layout_width="269dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="60dp"
+        android:text="周一至周五上午的值班时间为：9:00-12:00"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv-zbsj" />
+
+    <TextView
+        android:id="@+id/tv-sj2"
+        android:layout_width="269dp"
+        android:layout_height="49dp"
+        android:text="周一至周五下午的值班时间为：2:00-6:00"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv-sj1" />
+
+    <TextView
+        android:id="@+id/tv-sj3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="周末休息"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv-sj2"
+        app:layout_constraintTop_toBottomOf="@+id/tv-sj2" />
+
+    <Button
+        android:id="@+id/btn-fhzb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/a2"
+        android:text="返回"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv-sj2" />
+</android.support.constraint.ConstraintLayout>

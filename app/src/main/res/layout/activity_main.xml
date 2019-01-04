@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv-hy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="欢迎来到办公室值班信息系统"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+        android:id="@+id/btn-zb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/a2"
+        android:text="值班时间"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn-ry"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv-hy" />
+
+    <Button
+        android:id="@+id/btn-ry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/a2"
+        android:text="人员信息"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn-zb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn-zb" />
+
+    <Button
+        android:id="@+id/btn-qd"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/a2"
+        android:text="签到"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn-qt"
+        app:layout_constraintEnd_toStartOf="@+id/btn-qt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn-qt"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/a2"
+        android:text="签退"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn-qd"
+        app:layout_constraintTop_toBottomOf="@+id/btn-ry" />
+
+    <Button
+        android:id="@+id/btn-cx"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="148dp"
+        android:background="@drawable/a2"
+        android:text="查询"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn-qt" />
+
+</android.support.constraint.ConstraintLayout>
