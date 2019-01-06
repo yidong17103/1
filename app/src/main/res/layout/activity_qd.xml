@@ -7,15 +7,91 @@
     android:background="@drawable/a1"
     tools:context=".qdActivity">
 
+    <Button
+        android:id="@+id/btn_qd_fh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/a2"
+        android:text="返回"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
     <TextView
-        android:id="@+id/tv-qd"
+        android:id="@+id/tv_qd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="姓名："
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_qd_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_qd_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="工号："
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxt_qd_id"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qd_name" />
+
+    <EditText
+        android:id="@+id/edtTxt_qd_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_qd_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_qd_id" />
+
+    <TextView
+        android:id="@+id/tv_qd_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="签到"
+        android:text="欢迎签到"
         android:textSize="24sp"
-        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_qd_qd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="195dp"
+        android:background="@drawable/a2"
+        android:text="签到"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxt_qd_id"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_ad_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_qd_name"
+        app:layout_constraintStart_toStartOf="@+id/edtTxt_qd_id" />
+
 </android.support.constraint.ConstraintLayout>
