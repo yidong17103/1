@@ -4,14 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/a1"
+    android:background="@drawable/a12"
     tools:context=".cxActivity">
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_cx_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="输入"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="55dp" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:text="输入工号："
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cx_xx"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/a13"
+        android:text="查询信息"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cx_qd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cx_id" />
+
+    <Button
+        android:id="@+id/btn_cx_qd"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/a13"
+        android:text="查询签到"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_xx"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cx_qt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_cx_xx" />
+
+    <Button
+        android:id="@+id/btn_cx_qt"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:background="@drawable/a13"
+        android:text="查询签退"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_qd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_cx_qd" />
+
+    <Button
+        android:id="@+id/btn_cx_fh"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/a13"
+        android:text="返回"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_cx_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_cx_id"
+        app:layout_constraintStart_toEndOf="@+id/tv_cx_id" />
+
+    <TextView
+        android:id="@+id/tv_cx_xx"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/a11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cx_qd" />
+
 </android.support.constraint.ConstraintLayout>

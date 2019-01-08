@@ -20,7 +20,8 @@
         <activity android:name=".ryxxActivity" />
         <activity android:name=".qdActivity" />
         <activity android:name=".qtActivity" />
-        <activity android:name=".cxActivity"></activity>
+        <activity android:name=".cxActivity" />
+        <activity android:name=".cxxxActivity"></activity>
     </application>
 
 </manifest>
